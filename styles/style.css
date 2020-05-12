@@ -1,0 +1,92 @@
+html {
+  font-size: 12px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family:  'Open Sans Condensed', sans-serif; /* this should be the rest of the output you got from Google fonts */
+}
+
+p {color:red}
+
+h1 {
+
+
+  text-align: center;
+ 
+  
+}
+
+nav {
+
+  font-size: 3rem;
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+}
+
+nav span {
+  margin-left: 10px;
+  margin-right: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 100px;
+  user-select: none;
+  line-height: 0.8;
+  font-weight:400;
+}
+
+nav span.active {
+	animation: shrinkjump 1s ease-in-out;
+	transform-origin: bottom center;
+}
+
+@keyframes shrinkjump {
+	10%, 35% {
+		transform: scale(2, .2) translate(0, 0);
+	}
+	
+	45%, 50% {
+		transform: scale(1) translate(0, -150px);
+	}
+	
+	80% {
+		transform: scale(1) translate(0, 0);
+	}
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+    opacity:0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
+.udv {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 5s ease-out 1s 1 slideInFromLeft;
+
+}
+
+h2 { 
+text-align: center;
+margin-top: 4vw;
+}
+
+
+.box {
+text-align: center; }
+
+.box img{ 
+
+max-width: 100%; 
+max-height: 70vw; 
+object-fit: contain}
+
+.bday img {
+max-width: 10%; 
+}
+
+
+footer p { color: black;}
